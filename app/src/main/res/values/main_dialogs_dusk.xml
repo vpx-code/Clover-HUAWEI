@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="main_dialogs_dusk">
+        <item>@string/dusk_1</item>
+        <item>@string/dusk_2</item>
+        <item>@string/dusk_3</item>
+        <item>@string/dusk_4</item>
+        <item>@string/dusk_5</item>
+    </string-array>
+</resources>

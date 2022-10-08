@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="main_dialogs_dawn">
+        <item>@string/dawn_1</item>
+        <item>@string/dawn_2</item>
+        <item>@string/dawn_3</item>
+        <item>@string/dawn_4</item>
+        <item>@string/dawn_5</item>
+    </string-array>
+</resources>

@@ -1,0 +1,117 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#FF6666</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- SHOWCASEVIEW -->
+    <style name="NoonShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/colorPrimary_alpha</item>
+        <item name="sv_showcaseColor">@color/colorPrimaryDark</item>
+        <item name="sv_buttonText">@string/tutorial_siguiente</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+    </style>
+
+    <style name="IndividualNoonShowcaseTheme" parent="NoonShowcaseTheme">
+        <item name="sv_buttonText">@string/tutorial_entendido</item>
+    </style>
+
+    <style name="DuskShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/colorDusk_alpha</item>
+        <item name="sv_showcaseColor">@color/colorDuskDark</item>
+        <item name="sv_buttonText">@string/tutorial_siguiente</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_buttonBackgroundColor">@color/colorButtonDusk</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+        <item name="sv_detailTextAppearance">@style/TextAppearance.ShowcaseView.Detail</item>
+    </style>
+
+    <style name="IndividualDuskShowcaseTheme" parent="DuskShowcaseTheme">
+        <item name="sv_buttonText">@string/tutorial_entendido</item>
+    </style>
+
+    <style name="MorningShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/colorMorning_alpha</item>
+        <item name="sv_showcaseColor">@color/colorMorningDark</item>
+        <item name="sv_buttonText">@string/tutorial_siguiente</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+        <item name="sv_detailTextAppearance">@style/TextAppearance.ShowcaseView.Detail</item>
+    </style>
+
+    <style name="IndividualMorningShowcaseTheme" parent="MorningShowcaseTheme">
+        <item name="sv_buttonText">@string/tutorial_entendido</item>
+    </style>
+
+    <style name="NightShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/colorNight_alpha</item>
+        <item name="sv_showcaseColor">@color/colorNightDark</item>
+        <item name="sv_buttonText">@string/tutorial_siguiente</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+        <item name="sv_detailTextAppearance">@style/TextAppearance.ShowcaseView.Detail</item>
+    </style>
+
+    <style name="IndividualNightShowcaseTheme" parent="NightShowcaseTheme">
+        <item name="sv_buttonText">@string/tutorial_entendido</item>
+    </style>
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">@color/cardview_light_background</item>
+    </style>
+
+    <style name="TextAppearance.ShowcaseView.Detail" parent="android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- MENÚS -->
+    <style name="Noon" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bg_back">@drawable/day_back</item>
+        <item name="bg_mid">@drawable/day_mid</item>
+        <item name="bg_fore">@drawable/day_fore</item>
+        <item name="bg_color">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarker</item>
+        <item name="toolbar">@color/colorPrimaryDark</item>
+    </style>
+    <style name="Dawn" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bg_back">@drawable/dawn_back</item>
+        <item name="bg_mid">@drawable/dawn_mid</item>
+        <item name="bg_fore">@drawable/dawn_fore</item>
+        <item name="bg_color">@color/colorMorning</item>
+        <item name="android:statusBarColor">@color/colorMorningDarker</item>
+        <item name="toolbar">@color/colorMorningDark</item>
+    </style>
+    <style name="Dusk" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bg_back">@drawable/dusk_back</item>
+        <item name="bg_mid">@drawable/dusk_mid</item>
+        <item name="bg_fore">@drawable/dusk_fore</item>
+        <item name="bg_color">@color/colorDusk</item>
+        <item name="android:statusBarColor">@color/colorDuskDarker</item>
+        <item name="toolbar">@color/colorDuskDark</item>
+    </style>
+    <style name="Night" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bg_back">@drawable/night_back</item>
+        <item name="bg_mid">@drawable/night_mid</item>
+        <item name="bg_fore">@drawable/night_fore</item>
+        <item name="bg_color">@color/colorNight</item>
+        <item name="android:statusBarColor">@color/colorNightDarker</item>
+        <item name="toolbar">@color/colorNightDark</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dosis_alert_dialog_bg</item>
+    </style>
+
+    <style name="OverlayCustom" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

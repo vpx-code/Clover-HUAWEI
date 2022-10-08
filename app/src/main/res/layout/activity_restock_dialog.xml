@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dosis_alert_dialog_bg"
+    android:orientation="vertical">
+    <TextView
+        android:importantForAutofill="no"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/poppins_bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:importantForAutofill="no"
+        android:id="@+id/pack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorText" />
+    <TextView
+        android:importantForAutofill="no"
+        android:id="@+id/dosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorText"/>
+    <TextView
+        android:importantForAutofill="no"
+        android:id="@+id/freq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/colorText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_ok_button_left_both"
+            android:textColor="#FFF"
+            android:text="@string/reponer"
+            android:paddingVertical="@dimen/btn_padding"
+            android:textSize="@dimen/btnText"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit_button_right_both"
+            android:textColor="#FFF"
+            android:text="@string/editar"
+            android:paddingVertical="@dimen/btn_padding"
+            android:textAllCaps="true"
+            android:textSize="@dimen/btnText"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

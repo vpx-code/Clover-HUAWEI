@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_textview"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.8">
+        <TextView
+            android:id="@+id/nombre_tratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/cantidad_tratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            android:layout_marginVertical="32dp"
+            android:gravity="center"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tomar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_ok_button_all"
+        android:text="@string/double_tap_to_take"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/btnText"
+        android:textStyle="bold"
+        android:layout_below="@id/layout"
+        android:layout_weight="0.2"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

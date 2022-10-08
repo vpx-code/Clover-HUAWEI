@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#85BEC5</color>
+    <color name="colorPrimary_alpha">#E685BEC5</color>
+    <color name="colorPrimaryDark">#48838A</color>
+    <color name="colorPrimaryDarker">#37666A</color>
+
+    <color name="colorDusk">#491620</color>
+    <color name="colorDusk_alpha">#E6491620</color>
+    <color name="colorDuskDark">#2C0D13</color>
+    <color name="colorDuskDarker">#1B080C</color>
+    <color name="colorButtonDusk">#AF0000</color>
+
+    <color name="colorMorning">#daaac9</color>
+    <color name="colorMorning_alpha">#E6daaac9</color>
+    <color name="colorMorningDark">#CA86C0</color>
+    <color name="colorMorningDarker">#B174A9</color>
+
+    <color name="colorNight">#52529d</color>
+    <color name="colorNight_alpha">#E652529d</color>
+    <color name="colorNightDark">#444485</color>
+    <color name="colorNightDarker">#39396E</color>
+
+    <color name="colorTextBox">#FFE596</color>
+    <color name="colorTextBoxDark">#E8CE7A</color>
+    <color name="colorText">#6E460B</color>
+
+    <color name="colorAddButton">#36cc79</color>
+    <color name="colorAddButtonPressed">#00713A</color>
+    <color name="colorCancelButton">#FF4747</color>
+    <color name="colorCancelButtonPressed">#FF6666</color>
+    <color name="colorEditButton">#FF9900</color>
+    <color name="colorEditButtonPressed">#987500</color>
+</resources>

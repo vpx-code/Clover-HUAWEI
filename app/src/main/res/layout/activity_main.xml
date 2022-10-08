@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main_activity_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:id="@+id/scrolling_background"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleX="4"
+                android:scaleY="4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                scrolling_image_view:source="?attr/bg_back"
+                scrolling_image_view:speed="5dp" />
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:id="@+id/scrolling_mid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleX="4"
+                android:scaleY="4"
+                scrolling_image_view:source="?attr/bg_mid"
+                scrolling_image_view:speed="-5dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:id="@+id/scrolling_foreground"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleX="3"
+                android:scaleY="3"
+                scrolling_image_view:source="?attr/bg_fore"
+                scrolling_image_view:speed="10dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/treatment_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            android:elevation="12dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_weight="@dimen/main_layout_weight_up">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/treatment_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_textview"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_tratamientos"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/btn_add"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_list_treatment" />
+
+                <TextView
+                    android:id="@+id/text_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="42dp"
+                    android:text="@string/empty_treatment_list"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/emptyTreatments"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/btn_add"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/squared_ok_button"
+                    android:backgroundTint="@color/colorAddButton"
+                    android:paddingVertical="@dimen/btn_padding"
+                    android:text="@string/add"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="@dimen/btnText"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/main_layout_weight_down"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.xvlaze.clover.util.TypeWriter
+                android:id="@+id/dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_textview"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/cloverText"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/clover_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/clover_main"
+                android:layout_width="@dimen/clover"
+                android:layout_height="@dimen/clover"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_offset"
+        android:background="?attr/toolbar"
+        app:contentInsetStart="0dp"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/toolbar_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="42sp"
+                tools:ignore="RelativeOverlap" />
+            <ImageButton
+                android:id="@+id/btn_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_settings_24"
+                tools:ignore="ContentDescription" />
+            <ImageButton
+                android:id="@+id/btn_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_local_hospital_24"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>

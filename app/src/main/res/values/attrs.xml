@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customAttrs">
+        <attr name="bg_back" format="reference" />
+        <attr name="bg_mid" format="reference" />
+        <attr name="bg_fore" format="reference" />
+        <attr name="bg_color" format="reference" />
+        <attr name="toolbar" format="reference" />
+    </declare-styleable>
+</resources>

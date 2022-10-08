@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="main_dialogs_noon">
+        <item>@string/noon_1</item>
+        <item>@string/noon_2</item>
+        <item>@string/noon_3</item>
+        <item>@string/noon_4</item>
+        <item>@string/noon_5</item>
+    </string-array>
+</resources>
