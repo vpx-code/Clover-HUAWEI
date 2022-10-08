@@ -57,6 +57,7 @@ android {
     buildFeatures{
         viewBinding = true
     }
+    namespace 'com.xvlaze.clover'
 }
 
 dependencies {
