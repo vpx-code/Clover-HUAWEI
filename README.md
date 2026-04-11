@@ -2,7 +2,27 @@
 
 > Award-winning pill reminder for senior citizens, designed for the Huawei ecosystem.
 
-![Clover app logo](https://victorperez.tech/logos/clover.png)
+<p align="center">
+  <img src="https://victorperez.tech/logos/clover.png" alt="Clover app logo" width="120"/>
+</p>
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="https://victorperez.tech/screenshots/clover/clover-weather.png" alt="Weather-adaptive UI" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-1.webp" alt="Screenshot 1" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-2.webp" alt="Screenshot 2" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-3.webp" alt="Screenshot 3" width="200"/>
+</p>
+
+<p align="center">
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-4.webp" alt="Screenshot 4" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-5.webp" alt="Screenshot 5" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-6.webp" alt="Screenshot 6" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-7.webp" alt="Screenshot 7" width="200"/>
+</p>
 
 ---
 
@@ -10,7 +30,7 @@
 
 Clover is a medication reminder app for senior citizens, built natively for Android and the Huawei ecosystem. What started as a two-week hackathon prototype grew into a multi-year project that won three international awards and was published on both AppGallery and Google Play.
 
-The project went through two major iterations: an initial Java prototype, and a full rewrite in Kotlin with a redesigned architecture and an companion Huawei Watch app.
+The project went through two major iterations: an initial Java prototype, and a full rewrite in Kotlin with a redesigned architecture and a companion Huawei Watch app.
 
 ---
 
