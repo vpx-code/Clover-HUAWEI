@@ -3,7 +3,7 @@
 > Award-winning pill reminder for senior citizens, designed for the Huawei ecosystem.
 
 <p align="center">
-  <img src="https://victorperez.tech/logos/clover.png" alt="Clover app logo" width="120"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-weather.png" alt="Clover weather-adaptive UI" width="100%"/>
 </p>
 
 ---
@@ -11,14 +11,13 @@
 ## Screenshots
 
 <p align="center">
-  <img src="https://victorperez.tech/screenshots/clover/clover-weather.png" alt="Weather-adaptive UI" width="200"/>
   <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-1.webp" alt="Screenshot 1" width="200"/>
   <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-2.webp" alt="Screenshot 2" width="200"/>
   <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-3.webp" alt="Screenshot 3" width="200"/>
+  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-4.webp" alt="Screenshot 4" width="200"/>
 </p>
 
 <p align="center">
-  <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-4.webp" alt="Screenshot 4" width="200"/>
   <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-5.webp" alt="Screenshot 5" width="200"/>
   <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-6.webp" alt="Screenshot 6" width="200"/>
   <img src="https://victorperez.tech/screenshots/clover/clover-screenshot-7.webp" alt="Screenshot 7" width="200"/>
