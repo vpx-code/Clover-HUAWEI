@@ -1,0 +1,22 @@
+# Project-wide Gradle settings.
+# IDE (e.g. Android Studio) users:
+# Gradle settings configured through the IDE *will override*
+# any settings specified in this file.
+# For more details on how to configure your build environment visit
+# http://www.gradle.org/docs/current/userguide/build_environment.html
+
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+android.useAndroidX=true
+android.enableJetifier=true
+kotlin.code.style=official
+
+# ============================================================================
+# SIGNING CONFIGURATION (SENSITIVE - DO NOT COMMIT gradle.properties!)
+# ============================================================================
+# Copy this file to gradle.properties and fill in your signing credentials
+# The gradle.properties file is in .gitignore to prevent accidental exposure
+
+# Keystore file: app/cloverharmony.jks
+KEY_ALIAS=mobile-release
+KEY_PASSWORD=your_key_password_here
+STORE_PASSWORD=your_store_password_here

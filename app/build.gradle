@@ -21,9 +21,9 @@ android {
     signingConfigs {
         release {
             storeFile file('cloverharmony.jks')
-            keyAlias System.getenv('KEY_ALIAS') ?: 'mobile-release'
-            keyPassword System.getenv('KEY_PASSWORD')
-            storePassword System.getenv('STORE_PASSWORD')
+            keyAlias project.findProperty('KEY_ALIAS') ?: 'mobile-release'
+            keyPassword project.findProperty('KEY_PASSWORD')
+            storePassword project.findProperty('STORE_PASSWORD')
             v1SigningEnabled true
             v2SigningEnabled true
         }
