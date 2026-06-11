@@ -29,7 +29,7 @@ import java.util.*
 class PharmaActivity : ThemedActivity(), OnMapReadyCallback {
     private var hMap: HuaweiMap? = null
     private lateinit var mMapView: MapView
-    private var _hmsapikey: String? = 
+    private var _hmsapikey: String? = null
     private lateinit var binding: ActivityPharmaBinding
     private lateinit var siteInfo: RelativeLayout
     private lateinit var viewModel: PharmaViewModel
@@ -39,7 +39,10 @@ class PharmaActivity : ThemedActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapsInitializer.setApiKey(_hmsapikey)
+        _hmsapikey = loadApiKeyFromConfig()
+        if (_hmsapikey != null) {
+            MapsInitializer.setApiKey(_hmsapikey)
+        }
 
         binding = ActivityPharmaBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -284,6 +287,16 @@ class PharmaActivity : ThemedActivity(), OnMapReadyCallback {
         val uri = Uri.fromParts("package", packageName, null)
         intent.data = uri
         startActivityForResult(intent, 101) // FIXME
+    }
+
+    private fun loadApiKeyFromConfig(): String? {
+        return try {
+            val config = com.huawei.agconnect.config.AGConnectServicesConfig.fromContext(this)
+            config.getString("client/api_key")
+        } catch (e: Exception) {
+            Timber.tag(TAG).e(e, "Failed to load API key from agconnect-services.json")
+            null
+        }
     }
 
     override fun onResume() {
