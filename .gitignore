@@ -18,8 +18,18 @@ local.properties
 agconnect-services.json
 *.key
 *.pem
+*.jks
+*.keystore
 .env
 .env.local
 .env.*.local
 **/secrets/
 **/credentials/
+
+# Build artifacts - NEVER commit APK/AAB/HAP files
+*.apk
+*.aab
+*.hap
+/app/release/
+/build/
+dist/
