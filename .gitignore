@@ -33,3 +33,7 @@ agconnect-services.json
 /app/release/
 /build/
 dist/
+
+# Gradle signing credentials
+gradle.properties
+signing.properties
