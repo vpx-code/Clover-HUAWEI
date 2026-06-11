@@ -6,10 +6,20 @@
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea/assetWizardSettings.json
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+
+# API Credentials & Secrets
+agconnect-services.json
+*.key
+*.pem
+.env
+.env.local
+.env.*.local
+**/secrets/
+**/credentials/
