@@ -35,8 +35,7 @@ object Watch {
     )
     private lateinit var connectedDevice: Device
     private const val peerPkgName = "com.xvlaze.clover.watch"
-
-    private const val peerFingerPrint = ""
+    private val peerFingerPrint = buildPeerFingerprint()
     private var p2pClient: P2pClient = HiWear.getP2pClient(MyApplication.getApp()!!.applicationContext)
     private var currentTreatmentName = ""
     private val notificationManager by lazy { MyApplication.getApp()!!.notificationManager }
@@ -316,6 +315,10 @@ object Watch {
     }
 
     private fun isBluetoothEnabled() : Boolean = BluetoothAdapter.getDefaultAdapter().isEnabled
+
+    private fun buildPeerFingerprint(): String {
+        return "$peerPkgName" + "_" + BuildConfig.APPLICATION_ID
+    }
 }
 
 
